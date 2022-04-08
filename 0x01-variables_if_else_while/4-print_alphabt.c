@@ -8,19 +8,17 @@
 int main(void)
 {
 char al;
-al = 'a';
-while (al <= 'z')
+for ( al = 'a' al <= 'z' al++)
 {
-if (al != 'e' && al != 'q')
-{
+if (al == 'e')
+continue;
+else if (al == 'q')
+continue;
+
 putchar(al);
-al++
+
 }
-else
-{
-al++;
-}
-}
+
 putchar('\n');
 
 return (0);
