@@ -11,6 +11,10 @@ for (alph = 'a'; alph <= 'z'; alph++)
 {
 putchar(alph);
 }
+alph = 'A';
+while(alph <= 'Z')
+putchar(alph);
+ 
 putchar('\n');
 
 return (0);
