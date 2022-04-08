@@ -11,12 +11,14 @@ char al;
 al = 'a';
 while (al <= 'z')
 {
-if (al == 'e')
-continue;
-else if (al == 'q')
-continue;
-else
+if (al != 'e' && al != 'q')
+{
 putchar(al);
+}
+else
+{
+continue;
+}
 al++;
 }
 putchar('\n');
