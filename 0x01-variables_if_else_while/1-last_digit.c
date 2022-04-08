@@ -1,18 +1,23 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers incluede here*/
 
-/* betty style doc for function main goes here */
-in main(void)
+/**
+ *main - entry point
+ *
+ *Return: Always 0 (success)
+ */
+
+int main(void)
 {
   int n;
-  int lastDigit;
+  int last_digit;
+  int first_digit;
  
   srand(time(0));
   n = rand () - RAND_MAX / 2;
   last_digit = n % 10;
-  last_digit = n;
-  while ( last_digit >= 10 )
+  while (last_digit >= 10)
     {
       last_digit = last_digit/10;
     }
