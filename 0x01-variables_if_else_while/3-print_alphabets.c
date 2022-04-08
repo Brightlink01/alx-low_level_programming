@@ -12,10 +12,11 @@ for (alph = 'a'; alph <= 'z'; alph++)
 putchar(alph);
 }
 alph = 'A';
-while(alph <= 'Z')
+while (alph <= 'Z')
+{
 putchar(alph);
- 
+alph++;
+}
 putchar('\n');
-
 return (0);
 }
