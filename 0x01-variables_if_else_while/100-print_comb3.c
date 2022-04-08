@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Entry point
  *
  *Return: Always 0 (success/correct)
@@ -13,7 +12,7 @@ int i;
 int j;
 for (i =48; i <= 57; i++)
 {
-j+=i;
+j = i + 1;
 for (; j <= 57; j++)
 {
 putchar(i);
