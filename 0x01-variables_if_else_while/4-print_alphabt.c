@@ -14,12 +14,12 @@ while (al <= 'z')
 if (al != 'e' && al != 'q')
 {
 putchar(al);
+al++
 }
 else
 {
-continue;
-}
 al++;
+}
 }
 putchar('\n');
 
