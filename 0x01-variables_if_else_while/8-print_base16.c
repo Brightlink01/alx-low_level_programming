@@ -16,9 +16,8 @@ putchar(b_16);
 }
 for (b_16 = 97; b_16 <= 102; b_16++)
 {
-  putchar(b_16);
+putchar(b_16);
 }
-
+putchar('\n');
 return (0);
-
 }
