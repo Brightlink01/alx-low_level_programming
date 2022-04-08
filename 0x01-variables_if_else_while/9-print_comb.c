@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- *
- * main - entery point
+ * main - Entry point
  *
  * Return: Always 0 (success/correct)
  */
@@ -17,8 +16,8 @@ if (num == 57)
 {
 break;
 }
-putchar(' ');
 putchar(',');
+putchar(' ');
 }
 putchar('\n');
 
