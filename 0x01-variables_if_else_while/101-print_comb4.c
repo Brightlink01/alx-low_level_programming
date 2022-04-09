@@ -18,7 +18,7 @@ j = i + 1;
 for (; j < 57; j++)
 {
 k = j + 1;
-for (; k <= 57) k++)
+for (; k <= 57; k++)
 {
 
 putchar(i);
