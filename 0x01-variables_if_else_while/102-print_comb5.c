@@ -8,8 +8,7 @@
 int main(void)
 {
 int num;
-int num2;
-  
+ int num2;
 for (num = 0; num <= 98; num++)
 {
 num2 = num + 1;
