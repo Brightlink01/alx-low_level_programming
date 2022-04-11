@@ -7,28 +7,25 @@
 
 int main(void)
 {
-int i;
-int j;
-int k;
-int y;
-for (i = 48; i <= 57; i++)
+int num;
+int num2;
+  
+for (num = 0; num <= 98; num++)
 {
-for (j = 48; j <= 56; j++)
+num2 = num + 1;
+for (; num2 <= 99; num2++)
 {
-for (k = 48; k <= 57; k++)
-{
-for (y = 48; y <= 57; y++)
-{
-putchar(i);
-putchar(j);
+putchar((num / 10) + '0');
+putchar((num % 10) + '0');
 putchar(' ');
-putchar(k);
-putchar(y);
+putchar((num2 / 10) + '0');
+putchar((num2 % 10) + '0');
+if (num == 98 && num2 == 99)
+continue;
 putchar(',');
 putchar(' ');
 }
 }
-}
-}
+putchar('\n');
 return (0);
 }
