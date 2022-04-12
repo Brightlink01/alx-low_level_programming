@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * lower case alphabet prting functions
@@ -15,8 +15,9 @@ for (alp = 'a'; alp <= 'z'; alp++)
 
 _putchar(alp);
 
-_putchar('\n');
 }
+_putchar('\n');
+
 }
 
 /**
@@ -24,11 +25,3 @@ _putchar('\n');
  * Return: Always 0
  */
 
-int main(void)
-{
-
-print_alphabet();
-
-return (0);
-
-}
