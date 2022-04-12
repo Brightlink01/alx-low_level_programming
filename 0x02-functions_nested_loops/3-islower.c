@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
-* _islower - is a function check for lower or upper
-* returns:  1 or 0
+* _islower - take int parametr checks for lower or upper
+* returns: 1 for lower case and return 0 for upper case Alphabet
 */
 
 int _islower(int c)
