@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
-*print_sign - takes intiger and return 1 for posative 0 for zero and -1 for negative n value
+*print_sign - takes intiger and return 1 for posative, 0 for zero and -1 for negative
 *@n: takes integer value
 *Return: 1 for psitive number, 0 for zero and -1 for negative number
 */
