@@ -24,6 +24,7 @@ else if (k <= 9)
 _putchar(',');
 _putchar(' ');
 _putchar(k / 10 + '0');
+}
 else if (k >= 9)
 {
 _putchar(',');
