@@ -1,11 +1,10 @@
 #include"main.h"
 
 /**
- *print_last_digit - prints last digit of number
- *@n:takes an intiger 
- *Return: Return output
- *
- */
+*print_last_digit - prints last digit of number
+*@n:takes an intiger
+*Return: Return output
+*/
 int print_last_digit(int n)
 {
 int ln;
