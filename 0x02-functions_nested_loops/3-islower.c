@@ -2,8 +2,9 @@
 
 /**
 * _islower - take int parametr checks for lower or upper
-* returns: 1 for lower case and return 0 for upper case Alphabet
-* c: parameter takes in character
+* @c: takes character 
+* Returns: 1 for lower case, 0 for upper case Alphabet
+*
 */
 
 int _islower(int c)
