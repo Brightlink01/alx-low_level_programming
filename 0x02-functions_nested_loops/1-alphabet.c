@@ -1,10 +1,9 @@
 #include"main.h"
 
 /**
- * lower case alphabet prting functions
- * the it done using for looping 
- *
- */
+ * void function prints alphabets 
+ * Return: nothing
+*/
 
 void print_alphabet(void)
 {
