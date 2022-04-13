@@ -23,7 +23,7 @@ if (k < 10 && j != 0)
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
-_putchar(k);
+_putchar(k + '0');
 }
 else if (k < 100)
 {
@@ -43,8 +43,8 @@ if (j != n)
 {
 _putchar(',');
 }
-}
 _putchar('\n');
+}
 }
 }
 }
