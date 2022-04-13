@@ -18,11 +18,14 @@ for (i = 0; i <= n; i++)
 for (j = 0; j <= n; j++)
 {
 k = i * j;
-if (k < 10 && j != 0)
+if (k < 10)
+{
+if (j != 0)
 {
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
+}
 _putchar(k + '0');
 }
 else if (k < 100)
@@ -43,8 +46,8 @@ if (j != n)
 {
 _putchar(',');
 }
+}
+}
 _putchar('\n');
-}
-}
 }
 }
