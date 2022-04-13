@@ -2,6 +2,7 @@
 
 /**
  *print_times_table - prints time table
+ *@n: integral parameter
  *void returns nothing;
  */
 
@@ -31,7 +32,7 @@ _putchar((k % 10) + '0');
 }
 else if (k >= 100)
 {
-_putchar(( k / 100)) + '0');
+_putchar(k / 100) + '0');
 _putchar(((k % 100) / 10) + '0');
 _putchar(((k % 100) % 10) + '0');
 }
