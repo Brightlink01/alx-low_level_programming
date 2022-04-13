@@ -1,11 +1,9 @@
 #include"main.h"
-
 /**
  *print_times_table - prints time table
  *@n: integral parameter
  *void returns nothing;
  */
-
 void print_times_table(int n)
 {
 int i;
