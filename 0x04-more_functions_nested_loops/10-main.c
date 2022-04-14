@@ -7,6 +7,6 @@
 
 int main(void)
 {
-print_triangle(0);
+print_triangle(5);
 return (0);
 }
