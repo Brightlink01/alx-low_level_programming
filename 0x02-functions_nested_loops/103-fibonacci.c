@@ -31,7 +31,7 @@ tp = s;
 s = s + s1;
 if (s % 2 == 0)
 {
-sum =s + sum;
+sum = s + sum;
 s1 = s;
 }
 else
