@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+/**
+ * main - Entry point of the program
+ * Return: Always 0, (success/correct)
+ */
+
+int main(void)
+{
+unsigned long s1;
+unsigned long s;
+unsigned long sum;
+s = 1;
+sum = 0;
+
+while(s < 4000000)
+{
+if (s == 1)
+{
+s1 = s;
+s = s + 1;
+}
+else
+{
+s = s + s1;
+s1 = s;
+ 
+if (s % 2 == 0)
+{
+sum = sum + s;
+}
+}
+}
+
+printf("%li", sum);
+printf("\n"); 
+
+return (0);
+}
