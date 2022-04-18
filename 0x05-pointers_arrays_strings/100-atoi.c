@@ -39,6 +39,7 @@ else if (s[i] == '-')
 {
 sing *= -1;
 }
+}
 return (num * sing);
 }
   
