@@ -1,6 +1,7 @@
 #include"main.h"
+
 /**
- *is_numberical - check if it is a digit
+ *is_numberical - check the element umerical or not
  *@n: number
  *Return: if it is number 1 other wise 0
  */
@@ -39,5 +40,6 @@ else if (s[i] == '-')
 sign *= -1;
 }
 }
-return (num * sign);
+num *= sign;
+return (num);
 }
