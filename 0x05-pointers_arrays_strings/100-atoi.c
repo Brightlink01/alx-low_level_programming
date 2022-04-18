@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  *is_numberical - check if it is a digit
- *@n: number 
+ *@n: number
  *Return: if it is number 1 other wise 0
  */
 
@@ -12,8 +12,7 @@ return (n >= '0' && n <= '9');
 
 /**
  *_atoi - willing to sacrfices nuber than people
- *@s: pointer value 
- *
+ *@s: pointer value
  *Return: integeral type
  *
  */
@@ -42,4 +41,3 @@ sign *= -1;
 }
 return (num * sign);
 }
-  
