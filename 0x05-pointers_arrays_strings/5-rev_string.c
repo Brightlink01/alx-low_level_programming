@@ -27,7 +27,7 @@ for (i = 0; i < count - 1; i++)
 en_c++;
 }
 
-for (i = 0; i <count / 2; i++)
+for (i = 0; i < count / 2; i++)
 {
 c = *en_c;
 *en_c = *st_c;
