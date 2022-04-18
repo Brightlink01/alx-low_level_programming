@@ -1,9 +1,9 @@
 #include"main.h"
 
 /**
- *is_numberical - covert a string to an integer
+ *is_numerical - covert a string to an integer
  *@n: number
- *Return: if it is number 1 other wise 0
+ *Return: 1 if it is number other wise 0
  */
 
 int is_numerical(unsigned int n)
