@@ -28,7 +28,7 @@ num = 0;
 
 for (i = 0; s[i] != '\0'; i++)
 {
-if (is_numerical(s[i])
+if (is_numerical(s[i]))
 {
 num = (s[i] - 48) + nm * 10;
 
