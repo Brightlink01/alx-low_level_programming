@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
- *_strcpy - copy the string 
- *@dest: pointer type destionation 
+ *_strcpy - copy the string
+ *@dest: pointer type destionation
  *@src: pointer type variable src
  *Return: dest
  *
