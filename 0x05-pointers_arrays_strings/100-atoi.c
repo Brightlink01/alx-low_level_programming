@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- *is_numberical - check the element umerical or not
+ *is_numberical - covert a string to an integer
  *@n: number
  *Return: if it is number 1 other wise 0
  */
