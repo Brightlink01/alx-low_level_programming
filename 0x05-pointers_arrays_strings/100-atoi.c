@@ -30,16 +30,16 @@ for (i = 0; s[i] != '\0'; i++)
 {
 if (is_numerical(s[i]))
 {
-num = (s[i] - 48) + nm * 10;
+num = (s[i] - 48) + num * 10;
 
 if (s[i + 1] == ' ')
 break;
 }
 else if (s[i] == '-')
 {
-sing *= -1;
+sign *= -1;
 }
 }
-return (num * sing);
+return (num * sign);
 }
   
