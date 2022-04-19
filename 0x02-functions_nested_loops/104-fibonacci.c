@@ -7,10 +7,10 @@
 
 int main(void)
 {
-unsigned long long int s1;
-unsigned long long int s;
+unsigned long s1;
+unsigned long s;
 unsigned long i;
-unsigned long long int tp;
+unsigned long tp;
 s = 2;
 s1 = 1;
 
