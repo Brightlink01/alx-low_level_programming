@@ -20,18 +20,12 @@ for (i = 0; i <= 31; i++)
 {
 if (i == 0)
 {
-printf("%li", s1);
-printf(",");
-printf(" ");
-printf("%li", s);
+tp = s;
 }
-else if (i < 31)
+else if (i <= 31)
 {
 tp = s;
-printf(",");
-printf(" ");
 s = s + s1;
-printf("%li", s);
 s1 = tp;
 if (tp % 2 == 0)
 sum = sum + tp;
