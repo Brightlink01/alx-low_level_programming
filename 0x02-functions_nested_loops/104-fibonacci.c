@@ -11,12 +11,10 @@ unsigned long s1;
 unsigned long s;
 unsigned long i;
 unsigned long tp;
-unsigned long sum;
-sum = 2;
 s = 2;
 s1 = 1;
 
-for (i = 0; i <= 31; i++)
+for (i = 0; i <= 97; i++)
 {
 if (i == 0)
 {
@@ -25,7 +23,7 @@ printf(",");
 printf(" ");
 printf("%li", s);
 }
-else if (i < 31)
+else if (i < 97)
 {
 tp = s;
 printf(",");
@@ -33,12 +31,9 @@ printf(" ");
 s = s + s1;
 printf("%li", s);
 s1 = tp;
-if (tp % 2 == 0)
-sum = sum + tp;
 }
 else
 {
-printf("%li", sum);
 printf("\n");
 }
 }
