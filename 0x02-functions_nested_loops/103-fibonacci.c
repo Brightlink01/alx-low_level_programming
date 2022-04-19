@@ -32,7 +32,6 @@ sum = sum + tp;
 }
 else
 {
-sum = 4613732;
 printf("%li", sum);
 printf("\n");
 }
