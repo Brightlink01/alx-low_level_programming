@@ -7,8 +7,8 @@
 
 int main(void)
 {
-unsigned long s1;
-unsigned long s;
+unsigned long s1, m, n, carry;
+unsigned long s, m0, n0;
 unsigned long i;
 unsigned long tp;
 s = 2;
@@ -23,7 +23,7 @@ printf(",");
 printf(" ");
 printf("%li", s);
 }
-else if (i < 97)
+else if (i <= 91)
 {
 tp = s;
 printf(",");
@@ -34,6 +34,9 @@ s1 = tp;
 }
 else
 {
+m = s % 1000;
+n = s / 1000;
+m0 = s1 % 1000;
 printf("\n");
 }
 }
