@@ -1,0 +1,13 @@
+#include"main.h"
+
+/**
+ *_strcat - string concatinating function
+ *@dest: the char pointer type to take concatenation
+ *@src: char type pointer to be concatnated
+ *Return: dest pointer 
+ *
+ */
+char *_strcat(char *dest, char *src)
+{
+  int i, j;
+  for (i = 0; i < '
