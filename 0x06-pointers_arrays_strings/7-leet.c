@@ -17,7 +17,7 @@ char num[] = "43071";
 for (i = 0; srg[i] != '\0'; i++)
 {
 
-for (j = 0; lw[j] != '\0'&& up[j] != '\0'; j++)
+for (j = 0; lw[j] != '\0' && up[j] != '\0'; j++)
 {
 if (srg[i] == lw[j] || srg[i] == up[j])
 {
