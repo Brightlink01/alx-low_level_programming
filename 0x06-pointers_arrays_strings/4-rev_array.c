@@ -1,4 +1,4 @@
-#include"main.c"
+#include"main.h"
 /**
  *reverse _array - function that reverse strings
  *@a: a pointer that holds string to be reversed
