@@ -34,6 +34,5 @@ else if (str[i] > 47 && str[i] < 58)
 count = 0;
 }
 }
-putchar('\n');
 return (str);
 }
