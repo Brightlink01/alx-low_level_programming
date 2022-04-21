@@ -1,10 +1,12 @@
 #include"main.h"
+
 /**
  *reverse _array - function that reverse strings
  *@a: a pointer that holds string to be reversed
  *@n: n is the number of array of element
  *Return: void always true;
  */
+
 void reverse_array(int *a, int n)
 {
 int *rev, j, i;
@@ -13,5 +15,7 @@ j = 0;
 while (i >= 0)
 {
 re[j] = a[i];
+i--;
+j++;
 }
 }
