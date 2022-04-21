@@ -14,7 +14,7 @@ i = n - 1;
 j = 0;
 while (i >= 0)
 {
-re[j] = a[i];
+rev[j] = a[i];
 i--;
 j++;
 }
