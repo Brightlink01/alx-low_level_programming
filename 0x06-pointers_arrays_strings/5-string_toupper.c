@@ -1,4 +1,5 @@
 #include"main.h"
+#include<ctype.h>
 
 /**
  *string_toupper - changes the lower case to upper case
@@ -9,9 +10,10 @@
 char *string_toupper(char *str)
 {
 int i;
-for (i = 0; i != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 if (!isupper(str[i]))
 str[i] = toupper(str[i]);
 }
+return (str);
 }
