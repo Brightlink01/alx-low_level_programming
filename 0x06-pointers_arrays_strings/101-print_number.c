@@ -9,7 +9,7 @@
 void print_number(int n)
 {
 
-int sign, pwr, und, cary;
+int sign, pwr, cary;
 cary = 0;
 pwr = 1;
 sign = 0;
@@ -41,7 +41,7 @@ pwr = pwr / 10;
 if (pwr == 1)
 {
 if (sign)
-_putchar((n % 10 * -1 + '0');
+_putchar((n % 10 ) * -1 + '0');
 else
 _putchar((n % 10) + '0');
 pwr = 0;
