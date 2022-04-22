@@ -1,26 +1,26 @@
-#include"main.h"
+#include "main.h"
 
 /**
- *print_number - prints integral numbers using putchar
- *@n: integral variable 
- *Return: void success
- *
+ * print_number - prints an integer;
+ * @n: integer to be printed;
+ * Return: void and the recursion is not restriction
  */
-void(int n)
-{
-  int x, y, hold, neg;
-  if (n < 0)
-    neg = 1;
 
-  if (n >= 10000)
-    for (x = 0; x <= 5; x++)
-      {
-	y = n / 10000;
-	hold = n % 10000
-	if (n >= 1000)
-	  {
-	    y =n/1000
-	    hold = n % 1000;
-	  }
-      }
+void print_number(int n)
+{
+	unsigned int num;
+
+	if (n < 0)
+	{
+		num = -n;
+		_putchar('-');
+	} else
+	{
+		num = n;
+	}
+
+	if (num / 10)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
