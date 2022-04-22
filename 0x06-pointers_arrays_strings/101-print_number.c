@@ -31,7 +31,7 @@ while (pwr > 0)
 {
 if (pwr > 9)
 {
-if(!sign)
+if (!sign)
 _putchar((n / pwr % 10) + '0');
 else
 _putchar((n / pwr % 10) + '0');
@@ -41,7 +41,7 @@ pwr = pwr / 10;
 if (pwr == 1)
 {
 if (sign)
-_putchar((n % 10 ) * -1 + '0');
+_putchar((n % 10) * -1 + '0');
 else
 _putchar((n % 10) + '0');
 pwr = 0;
