@@ -10,7 +10,7 @@ void print_number(int n)
 {
 
 int sign, pwr, cary;
-cary = 0;
+cary = n;
 pwr = 1;
 sign = 0;
 
@@ -21,7 +21,7 @@ sign = 0;
 
 }
 
-while (n > 9 || n < -9)
+while (cary > 9 || cary < -9)
 {
 pwr = pwr * 10;
 cary = cary / 10;
@@ -34,7 +34,7 @@ if (pwr > 9)
 if (!sign)
 _putchar((n / pwr % 10) + '0');
 else
-_putchar((n / pwr % 10) + '0');
+_putchar((n / pwr % 10) * -1 + '0');
 pwr = pwr / 10;
 }
 
