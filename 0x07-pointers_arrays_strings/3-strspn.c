@@ -1,26 +1,25 @@
-#include"main.h"
+#include "main.h"
+
 /**
- *_strspn - calculate the length of the arry
- *@s: source array passed
- *@accept: accept the span the pointer
- *Return: the s-s1
+ * _strspn - gets lengthof a prefix substring
+ * @s: string to check
+ * @accept: string to check against
+ *
+ * Return: number of bytes of s in accept
  */
+unsigned int _strspn(char *s, char *accept)
+{
+	unsigned int i, j;
 
-unsigned int _strspn(char *s, char * accept)
-{
-char *s1 = s;
-char *c;
-
-while (*s)
-{
-for (c = accept; *c; c++)
-{
-if (*s == *c)
-break;
-}
-if (*c == '\0')
-break;
-s++;
-}
-return (s - s1);
+	for (i = 0; s[i]; i++)
+	{
+		for (j = 0; accept[j]; j++)
+		{
+			if (s[i] == accept[j])
+				break;
+		}
+		if (!accept[j])
+			break;
+	}
+	return (i);
 }
