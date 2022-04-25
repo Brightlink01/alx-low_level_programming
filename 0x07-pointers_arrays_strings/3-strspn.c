@@ -2,7 +2,8 @@
 /**
  *_strspn - calculate the length of the arry
  *@s: source array passed
- *@accept: accept the span the pointer 
+ *@accept: accept the span the pointer
+ *Return: the s-s1
  */
 
 unsigned int _strspn(char *s, char * accept)
@@ -21,5 +22,5 @@ if (*c == '\0')
 break;
 s++;
 }
-return s - s1;
+return (s - s1);
 }
