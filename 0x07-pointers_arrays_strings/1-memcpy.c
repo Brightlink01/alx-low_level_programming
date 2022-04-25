@@ -1,21 +1,20 @@
-#include"main.h"
+#include "main.h"
 
 /**
- *_memcpy - function that copy memory address
- *@dest: the destination are that hold memory address copy
- *@src: the source arymemory address
- *@n: the size of array
- *Return: Return dest
+ * _memcpy - copies memory area
+ * @dest: destination of copy
+ * @src: memory area to copy
+ * @n: number of bytes to copy
+ *
+ * Return: pointer to dest
  */
-
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-unsigned int i = 0;
-for (i = 0; i <= n; i++)
+unsigned int i;
+
+for (i = 0; i < n; i++)
 {
-dest[i] = src[i];
+*(dest + i) = *(src + i);
 }
-
 return (dest);
-
 }
