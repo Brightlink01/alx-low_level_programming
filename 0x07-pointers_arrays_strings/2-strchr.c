@@ -1,20 +1,22 @@
-#include"main.h"
-#include <stddef.h>
+#include "main.h"
 
 /**
- *_strchr - set array based on char
- *@s: is array that has the strings
- *@c: the setting value
- *Return: s
+ * _strchr - locates a character in a string
+ * @s: string to check
+ * @c: character to check for
+ *
+ * Return: pointer to spot in s with c or null
  */
+char *_strchr(char *s, char c)
+{
+int i;
 
-char *_strchr(char *s,char c)
+for (i = 0; *(s + i); i++)
 {
-for (;; ++s)
-{
-if (*s == c)
-return (s);
-if (*s == '\0')
-return (NULL);
+if (*(s + i) == c)
+return (s + i);
 }
+if (*(s + i) == c)
+return (s + i);
+return (0);
 }
