@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stddef.h>
 
 /**
  *_strchr - set array based on char
@@ -7,15 +8,13 @@
  *Return: s
  */
 
-char *_strchr(char *s, int c)
+char *_strchr(char *s,char c)
 {
-
-int ch;
-c = c;
 for (;; ++s)
 {
 if (*s == c)
-return ((char *)s);
+return (s);
 if (*s == '\0')
 return (NULL);
+}
 }
