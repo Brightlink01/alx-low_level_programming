@@ -33,7 +33,7 @@ int is_prime(int n, int x)
  {
 
 int y;
- y = x * x;
+y = x *x;
 if (n % x == 0)
 return (0);
 if (y > n)
