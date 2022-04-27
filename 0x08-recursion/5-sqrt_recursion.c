@@ -13,6 +13,8 @@ int x = 2;
 int y;
 if (n == 1)
 return (1);
+if (n < 0 )
+return (-1);
 y = is_natural(n, x);
 return (y);
 }
