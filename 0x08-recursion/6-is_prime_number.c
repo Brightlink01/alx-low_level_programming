@@ -29,7 +29,7 @@ return (y);
  *Return: the prime 1 for prime
  */
 
-int is_prime(n, x)
+int is_prime(int n, int x)
 {
 
 if (n % x == 0)
