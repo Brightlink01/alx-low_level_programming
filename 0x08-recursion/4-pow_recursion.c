@@ -21,6 +21,6 @@ return (y);
 if(y >= 1)
 {
 y--;
-return (x * _pow_recursion(x));
+return (x * _pow_recursion(x, y - 1));
 }
 }
