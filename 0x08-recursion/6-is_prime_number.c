@@ -30,7 +30,7 @@ return (y);
  */
 
 int is_prime(int n, int x)
- {
+{
 
 int y;
 y = x *x;
