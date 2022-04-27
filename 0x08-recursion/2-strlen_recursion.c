@@ -2,7 +2,7 @@
 
 /**
  *_strlen_recursion - retrn s the lenth of strings Tsedal
- *@S: string the are found tsedal hold void pointer of fun
+ *@s: string the are found tsedal hold void pointer of fun
  *Return: int len is the string found in me
  *
  */
