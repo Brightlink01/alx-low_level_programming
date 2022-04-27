@@ -30,11 +30,13 @@ return (y);
  */
 
 int is_prime(int n, int x)
-{
+ {
 
+int y;
+ y = x * x;
 if (n % x == 0)
 return (0);
-if (x > n / 2)
+if (y > n)
 return (1);
 return (is_prime(n, x + 1));
 
