@@ -34,7 +34,7 @@ int is_prime(n, x)
 
 if (n % x == 0)
 return (0);
-if (x * x > n)
+if (x > n / 2)
 return (1);
 return (is_prime(n, x + 1));
 
