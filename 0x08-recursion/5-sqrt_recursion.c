@@ -17,13 +17,9 @@ y = is_natural(n, x);
 return (y);
 }
 int is_natural(int n, int x)
-{ int y, z;
-y = n % x;
-z= x * x;
-if (y == 0 && z == n )
+{
+if (x * x == n)
 return (x);
-is_natural(n, x + 1);
-if (z > n)
-return (0);
-x = 2;
+ 
+return (n % is_natural(n, n - 1));
 }
