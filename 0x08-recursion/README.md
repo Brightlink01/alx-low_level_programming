@@ -1,0 +1,1 @@
+Recursion is a method where thse solution to smaller instances of the same problems. This project is organized by holberton school for SE ALX student to master c programing to further deep and compute. Thank ful for your reading. Coding is life, computing is struggling, "when the problem is bigger try it see the smallest of the it "
