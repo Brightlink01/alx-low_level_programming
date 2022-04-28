@@ -12,4 +12,5 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int is_natural(int n, int x);
 int is_prime(int n, int x);
+int isPalRec(char *str, int s, int e);
 #endif
