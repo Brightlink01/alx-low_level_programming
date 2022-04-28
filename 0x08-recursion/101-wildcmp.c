@@ -18,7 +18,7 @@ err = 0;
 if (strlen(s1) - strlen(s2) > 1 || strlen(s1) - strlen(s2) < 1)
 return (0);
 
-if (*s1 == '\0' && *s2 == '\0' || err == 2)
+ if ((*s1 == '\0' && *s2 == '\0') || err == 2)
 return (err);
 
 if (*s1 != *s2)
