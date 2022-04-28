@@ -21,6 +21,7 @@ y = is_prime(n, x);
 return (y);
 
 }
+
 /**
  *is_prime - calculate primes
  *@n: number to passed
