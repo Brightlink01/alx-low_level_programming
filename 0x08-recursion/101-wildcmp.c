@@ -11,10 +11,10 @@
 int wildcmp(char *s1, char *s2)
 {
 
-if(*s != *S)
+if(*s1 != *S2)
 return (0);
 
-if (*s == *s)
+if (*s1 == *s2)
 return (s1 + 1, s2 + 1);
 
 return (1);
