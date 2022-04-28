@@ -9,21 +9,39 @@
  *
  */
 
-int wildcmp(char *s1, char *s2)
+int wildcmp(char *s2, char *s1)
 {
-if(s==NULL || s1==NULL)
-            return -2
+
+int i;
+int l1;
+int l2;
+int c;
  
-    if(strcmp(s,s1)==0) // the two strings are identical
-        return 0;
- 
-    if((s[0])==(s1[0]) && (s[0])==((s1+1)[0]))
-        CompareStrings(s, ++s1);
-    else if((s[0])==(s1[0]) && (s1[0])==((s+1)[0]))
-        CompareStrings(++s, s1);
-    else if((s[0])==(s1[0]))
-        CompareStrings(++s, ++s1);
-    else
-        return -1;
+l1 = strlen(s1);
+l2 = strlen(s2);
+c = 0;
+i = 0;
+
+
+if(l1!=l2)
+{
+
+return (0);	
+
+}  
+
+else if (i < l1)
+{
+
+if(s1[i] == s2[i] || s1[i] == '\0' || s2[i] == '\0')
+c++;
+i++;
+wildcmp(s1,s2);
+
+}
+
+if(c == i)
+return 1;
+return 0;
 
 }
