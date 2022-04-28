@@ -28,5 +28,5 @@ int is_natural(int n, int x)
 {
 if (x * x == n)
 return (x);
-return (n % is_natural(n, n - 1));
+return (is_natural(n, x + 1));
 }
