@@ -15,9 +15,7 @@ int wildcmp(char *s2, char *s1)
 int i;
 int l1;
 int c;
-int l2;
 
-l2 = strlen(s2);
 l1 = strlen(s1);
 c = 0;
 i = 0;
