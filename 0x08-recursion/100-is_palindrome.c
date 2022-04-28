@@ -7,7 +7,7 @@
  *
  */
 
-int isPalindrome(char *s)
+int is_palindrome(char *s)
 {
 
 int n = strlen(s);
