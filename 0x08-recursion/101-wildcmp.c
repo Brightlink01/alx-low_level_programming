@@ -20,9 +20,6 @@ l1 = strlen(s1);
 c = 0;
 i = 0;
 
-if (l1 != l2)
-return (0);
-
 if (i < l1)
 {
 
