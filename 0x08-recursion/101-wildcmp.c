@@ -15,24 +15,28 @@ int wildcmp(char *s2, char *s1)
 int i;
 int l1;
 int c;
- 
+int l2;
+
+l2 = strlen(s2);
 l1 = strlen(s1);
 c = 0;
 i = 0;
 
+if (l1 != l2)
+return (0);
 
 if (i < l1)
 {
 
-if(*s1 == *s2 || *s1 == '*' || *s2 == '*')
+if (*s1 == *s2 || *s1 == '*' || *s2 == '*')
 c++;
 i++;
-wildcmp(s1 + 1,s2 + 1);
+wildcmp(s1 + 1, s2 + 1);
 
 }
 
-if(c == i)
-return 1;
-return 0;
+if (c == i)
+return (1);
+return (0);
 
 }
