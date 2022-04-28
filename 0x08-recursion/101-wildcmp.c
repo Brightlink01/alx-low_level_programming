@@ -11,21 +11,19 @@
 
 int wildcmp(char *s1, char *s2)
 {
-
-int err;
-err = 0;
-
-if (strlen(s1) - strlen(s2) > 1 || strlen(s1) - strlen(s2) < 1)
-return (0);
-
-if ((*s1 == '\0' && *s2 == '\0') || err == 2)
-return (err);
-
-if (*s1 != *s2)
-err++;
-if(*s1 != '*' || *s2 != '*')
-err++;
-
-return (wildcmp(s1 + 1, s2 + 1));
+if(s==NULL || s1==NULL)
+            return -2
+ 
+    if(strcmp(s,s1)==0) // the two strings are identical
+        return 0;
+ 
+    if((s[0])==(s1[0]) && (s[0])==((s1+1)[0]))
+        CompareStrings(s, ++s1);
+    else if((s[0])==(s1[0]) && (s1[0])==((s+1)[0]))
+        CompareStrings(++s, s1);
+    else if((s[0])==(s1[0]))
+        CompareStrings(++s, ++s1);
+    else
+        return -1;
 
 }
