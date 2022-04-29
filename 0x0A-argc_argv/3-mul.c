@@ -12,10 +12,10 @@
 int main(int argc, char *argv[])
 {
 int i;
-if (argc < 3)
+if (argc < 3 && argc > 3)
 {
 
-printf("Error enter two num\n");
+printf("Error\n");
 return (1);
 }
 
