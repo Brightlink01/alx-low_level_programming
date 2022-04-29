@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  *main - main function
@@ -8,6 +7,7 @@
  *Return: Always 0, successful
  *
  */
+
 int main(int argc, char *argv[])
 {
 int i;
