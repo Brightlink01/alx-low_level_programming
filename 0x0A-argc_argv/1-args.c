@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  *main - main function
  *@argc: integral part that count the argument
@@ -11,11 +12,15 @@
 int main(int argc, char *argv[])
 {
 int i;
+int sum;
+sum = 0;
+if (argc > 0)
 for (i = 0; i < argc; i++)
 {
-printf("%s ", argv[i]);
+sum += sum;
 }
-printf("\n");
+
+printf("%d \n", sum);
 return (0);
 
 }
