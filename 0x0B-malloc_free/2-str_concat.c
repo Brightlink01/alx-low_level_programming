@@ -20,7 +20,7 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 len = len1 + len2;
 j = 0;
-if (len1 == 0 && len2 == 0)
+if (s1 == '\0' && s2 == '\0')
 con_str = " ";
 con_str = malloc((len + 1) * sizeof(char));
 if (con_str == NULL)
@@ -29,7 +29,7 @@ return (NULL);
 }
 for (i = 0; i <= len1; i++)
 {
-con_str[i] = s1[1];
+con_str[i] = s1[i];
 }
 while (j <= len2)
 {
