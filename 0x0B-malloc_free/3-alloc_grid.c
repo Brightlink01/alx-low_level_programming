@@ -1,3 +1,6 @@
+#include"main.h"
+#include <stdlib.h>
+
 /**
  *alloc_grid - function allocate a grid
  *@width: the or colomun of the array
