@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdlib.h>
 #include<string.h>
 
 /**
@@ -11,7 +12,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char *con_str
+
+char *con_str;
 unsigned int len, len1, len2, i, j;
 
 len1 = strlen(s1);
