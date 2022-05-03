@@ -21,7 +21,13 @@ len2 = strlen(s2);
 len = len1 + len2;
 j = 0;
 if (*s1 == '\0' && *s2 == '\0')
-con_str = " ";
+{
+
+*con_str = '\0';
+return (con_str);
+
+}
+
 con_str = malloc((len + 1) * sizeof(char));
 if (con_str == NULL)
 {
@@ -37,6 +43,6 @@ con_str[i] = s2[j];
 i++;
 j++;
 }
-
+con_str[i] = '\0';
 return (con_str);
 }
