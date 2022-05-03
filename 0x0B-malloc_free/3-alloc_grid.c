@@ -20,14 +20,18 @@ if (width == 0 || height == 0)
 {
 return (NULL);
 }
-str = (int **)malloc(height * sizeof(int*));
-for (k = 0; k < height; k++)
-{
-str[k] = (int *)malloc(width * sizeof(int));
-}
+str = (int **)malloc(height *sizeof(int*));
 if (str == NULL)
 {
 return (NULL);
+}
+for (k = 0; k < height; k++)
+{
+str[k] = (int *)malloc(width * sizeof(int));
+if str[k] == NULL)
+{
+return (NULL);
+}
 }
 while (i < height)
 {
