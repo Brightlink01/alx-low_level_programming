@@ -16,11 +16,11 @@ int **str;
 int k, i, j;
 i = 0;
 k = 0;
-if (width == 0 || height == 0)
+if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-str = (int **)malloc((height) * sizeof(int*));
+*str = (int **)malloc((height) * sizeof(int*));
 if (str == NULL)
 {
 return (NULL);
