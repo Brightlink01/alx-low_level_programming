@@ -28,7 +28,7 @@ return (NULL);
 for (k = 0; k < height; k++)
 {
 str[k] = (int *)malloc(width * sizeof(int));
-if str[k] == NULL)
+if (str[k] == NULL)
 {
 return (NULL);
 }
