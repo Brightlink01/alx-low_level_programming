@@ -18,7 +18,8 @@ char *c_str;
 len = strlen(str);
 c_str = malloc((len + 1) * sizeof(char));
 cnt = 0;
-
+if (len == 0)
+return (NULL);
 if (c_str == NULL)
 {
 return (NULL);
