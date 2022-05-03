@@ -26,11 +26,11 @@ if (con_str == NULL)
 {
 return (NULL);
 }
-for (i = 0; i <= len1; i++)
+for (i = 0; s1[i] != '\0'; i++)
 {
 con_str[i] = s1[i];
 }
-while (j <= len2)
+while (s2[j] != '\0')
 {
 con_str[i] = s2[j];
 i++;
