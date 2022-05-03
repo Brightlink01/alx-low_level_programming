@@ -1,7 +1,7 @@
 #include"main.h"
 #include<stdlib.h>
 /**
- * create_array - function that creates array 
+ * create_array - function that creates array
  * @size: the size of array to be created
  * @c: the charecter to be saved in array;
  * Return: char typed pointer
@@ -19,7 +19,7 @@ c_ar = malloc(size * sizeof(char));
 while (i < size)
 {
 c_ar[i] = c;
-i++
+i++;
 }
 return (c_ar);
 }
