@@ -11,7 +11,7 @@
 
 int **alloc_grid(int width, int height)
 {
-char **str;
+int **str;
 int i, j;
 i = 0;
 
@@ -21,7 +21,7 @@ if (str == NULL)
 return (NULL);
 }
 
-if (width == NULL || height == NULL)
+if (width == 0 || height == 0)
 {
 return (NULL);
 }
