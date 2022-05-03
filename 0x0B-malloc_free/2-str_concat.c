@@ -26,10 +26,12 @@ if (con_str == NULL)
 {
 return (NULL);
 }
+if (*s1 != NULL)
 for (i = 0; s1[i] != '\0'; i++)
 {
 con_str[i] = s1[i];
 }
+if (*s2 != NULL)
 while (s2[j] != '\0')
 {
 con_str[i] = s2[j];
