@@ -24,7 +24,7 @@ j = 0;
 if (*s1 == '\0' && *s2 == '\0')
 {
 
-con_str[0] = " ";
+con_str[0] = "";
 con_str[1] = '\0';
 return (con_str);
 
