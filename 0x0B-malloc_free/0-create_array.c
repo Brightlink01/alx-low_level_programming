@@ -21,5 +21,7 @@ while (i < size)
 c_ar[i] = c;
 i++;
 }
+
+c_ar[i] = '\0';
 return (c_ar);
 }
