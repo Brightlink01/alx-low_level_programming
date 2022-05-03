@@ -16,14 +16,9 @@ int len, cnt;
 char *c_str;
 
 if (str != NULL)
-len = strlen(str);
-else
-return (NULL);
-
 c_str = malloc((len + 1) * sizeof(char));
 cnt = 0;
 
-return (NULL);
 if (c_str == NULL)
 {
 return (NULL);
