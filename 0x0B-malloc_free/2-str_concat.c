@@ -26,12 +26,12 @@ if (con_str == NULL)
 {
 return (NULL);
 }
-if (*s1 != NULL)
+if (s1[0] != '\0')
 for (i = 0; s1[i] != '\0'; i++)
 {
 con_str[i] = s1[i];
 }
-if (*s2 != NULL)
+if (s2[0] != '\0')
 while (s2[j] != '\0')
 {
 con_str[i] = s2[j];
