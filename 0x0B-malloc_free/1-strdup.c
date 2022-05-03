@@ -30,7 +30,7 @@ c_str[cnt] = str[cnt];
 cnt++;
 }
 
-c_str[i] = '\0';
+c_str[cnt] = '\0';
 
 return (c_str);
 }
