@@ -26,7 +26,7 @@ return (NULL);
 
 while (cnt <= len)
 {
-c_str[i] = str[i];
+c_str[cnt] = str[cnt];
 cnt++;
 }
 
