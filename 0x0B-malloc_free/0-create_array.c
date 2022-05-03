@@ -16,6 +16,10 @@ i = 0;
 if (size == 0)
 return (NULL);
 c_ar = malloc(size * sizeof(char));
+if (c_ar == NULL)
+{
+return (NULL);
+}
 while (i < size)
 {
 c_ar[i] = c;
