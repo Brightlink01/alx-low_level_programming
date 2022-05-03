@@ -20,7 +20,7 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 len = len1 + len2;
 j = 0;
-if (s1 == '\0' && s2 == '\0')
+if (*s1 == '\0' && *s2 == '\0')
 con_str = " ";
 con_str = malloc((len + 1) * sizeof(char));
 if (con_str == NULL)
