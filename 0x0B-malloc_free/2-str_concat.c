@@ -3,7 +3,7 @@
 #include<string.h>
 
 /**
- *str_concat - conacatinates strings
+ *str_concat - conacatinates is strings
  *@s1: s1 string to be concatenaned
  *@s2: s2 string to bee concatenated
  *Return: char type pointer
