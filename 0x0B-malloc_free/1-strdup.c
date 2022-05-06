@@ -3,7 +3,7 @@
 #include<string.h>
 
 /**
-* _strdup - copy the strings and returns pointer
+* _strdup - copy the strings are and returns pointer
 *@str: the string character
 *Return: String of str
 *
