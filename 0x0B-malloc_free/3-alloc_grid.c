@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *alloc_grid - function allocate a grid
+ *alloc_grid - function allocate a grid off
  *@width: the or colomun of the array
  *@height: the height or row og the array
  *Return: the pointer of two diamention
