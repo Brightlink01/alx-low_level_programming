@@ -1,0 +1,1 @@
+The Alx SE Program projects as of the so colled busy stuff, and also says low level where as advanced and layman where as expertise. Donot for get to push the answer is command, checker are headeck. So, This project is to understand pointer and dynamic and automatic memory allocations using malloc
