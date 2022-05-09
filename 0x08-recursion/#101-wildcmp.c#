@@ -1,0 +1,41 @@
+#include"main.h"
+#include <string.h>
+
+/**
+ *wildcmp - comparing the strings
+ *@s1: the first string to be compare
+ *@s2: the second string to be compared
+ *Return: integral value
+ *
+ */
+
+int wildcmp(char *s2, char *s1)
+{
+
+int i;
+int l1;
+int c;
+ int l2;
+l1 = strlen(s1);
+c = 0;
+i = 0;
+l2 = strlen(s2);
+if (l1 >= l2)
+{
+if (i < l2)
+{
+
+if (s1[i] == s2[i] || s1[i] == '*' || *s2[i] == '*')
+c++;
+i++;
+wildcmp(s1 + 1, s2 + 1);
+
+}
+ if (s1[i] != '\0' && s[i] != '\0')
+   
+}
+if (c == i)
+return (1);
+return (0);
+
+}

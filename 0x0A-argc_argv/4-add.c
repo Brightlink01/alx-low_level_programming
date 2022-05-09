@@ -3,12 +3,13 @@
 #include<stdlib.h>
 
 /**
- *main - main function
+ *main - Entery point
  *@argc: integral part that count the argument
  *@argv: an array that takes the argument
  *Return: Always 0, successful
  *
  */
+
 boolean checkdigit(int n)
 {
 if (isdigit(n))
@@ -32,7 +33,7 @@ else
 while (i < argc)
 {
 
-bol = checkdigit(argv[i]);
+  bol = checkdigit(atoi(argv[i]));
 if (bol)
 sum += atoi(argv[i]);
 else
