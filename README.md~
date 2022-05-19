@@ -1,7 +1,0 @@
-The c programming introduction hello world
-carrie@ubuntu:/debugging$ cat main.c
-#include "main.h"
-/**
-* main - tests function that prints if integer is positive or negative
-* Return:o always
-*/
