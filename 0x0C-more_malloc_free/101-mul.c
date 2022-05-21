@@ -18,43 +18,42 @@ void print_result(char *src, int length);
 
 int main(int argc, char *argv[])
 {
-  int num1_length, num2_length;
-  char *result;
+int num1_length, num2_length;
+char *result;
 
-  if (argc != 3)
-    {
-      printf("Error\n");
-      exit(98);
-    }
+if (argc != 3)
+{
+printf("Error\n");
+exit(98);
+}
+num1_length = getLengthOfNum(argv[1]);
 
-  num1_length = getLengthOfNum(argv[1]);
+if (!num1_length)
+{
+printf("Error\n");
+exit(98);
+}
 
-  if (!num1_length)
-    {
-      printf("Error\n");
-      exit(98);
-    }
+num2_length = getLengthOfNum(argv[2]);
 
-  num2_length = getLengthOfNum(argv[2]);
+if (!num2_length)
+{
+printf("Error\n");
+exit(98);
+}
 
-  if (!num2_length)
-    {
-      printf("Error\n");
-      exit(98);
-    }
+result = malloc(num1_length + num2_length);
 
-  result = malloc(num1_length + num2_length);
+if (!result)
+return (1);
 
-  if (!result)
-    return (1);
+populateResult(result, argv[1], num1_length, argv[2], num2_length);
 
-  populateResult(result, argv[1], num1_length, argv[2], num2_length);
+print_result(result, num1_length + num2_length);
+printf("\n");
+free(result);
 
-  print_result(result, num1_length + num2_length);
-  printf("\n");
-  free(result);
-
-  return (0);
+return (0);
 }
 
 /**
@@ -68,18 +67,16 @@ int main(int argc, char *argv[])
 
 int getLengthOfNum(char *str)
 {
-  int i = 0;
+int i = 0;
 
-  while (str[i])
-    {
-      if (str[i] >= '0' && str[i] <= '9')
-	i++;
-      else
-	return ('\0');
-
-    }
-
-  return (i);
+while (str[i])
+{
+if (str[i] >= '0' && str[i] <= '9')
+i++;
+else
+return ('\0');
+}
+return (i);
 }
 
 /**
@@ -99,66 +96,66 @@ int getLengthOfNum(char *str)
 
 void populateResult(char *dest, char *n1, int n1_len, char *n2, int n2_len)
 {
-  int i, j, k, temp_value, non_carry_value;
-  int carry_value = 0;
-  char *multiplicand, *multiplier;
+int i, j, k, temp_value, non_carry_value;
+int carry_value = 0;
+char *multiplicand, *multiplier;
 
-  if (n1_len > n2_len)
-    {
-      i = n1_len - 1;
-      j = n2_len - 1;
-      multiplicand = n1;
-      multiplier = n2;
-    }
-  else
-    {
-      i = n2_len - 1;
-      j = n1_len - 1;
-      multiplicand = n2;
-      multiplier = n1;
-    }
+if (n1_len > n2_len)
+{
+i = n1_len - 1;
+j = n2_len - 1;
+multiplicand = n1;
+multiplier = n2;
+}
+else
+{
+i = n2_len - 1;
+j = n1_len - 1;
+multiplicand = n2;
+multiplier = n1;
+}
 
-  while (i >= 0)
-    {
-      k = i;
+while (i >= 0)
+{
+k = i;
+while (k >= 0)
+{
+temp_value = ((multiplicand[k] - '0') * (multiplier[j] - '0'));
+temp_value += carry_value;
 
-      while (k >= 0)
-	{
-	  temp_value = ((multiplicand[k] - '0') * (multiplier[j] - '0'));
-	  temp_value += carry_value;
+if (j + 1 <= n2_len - 1 && dest[k + j + 1] >= '0' && dest[k + j + 1] <= '9')
+temp_value += dest[k + j + 1] - '0';
 
-	  if (j + 1 <= n2_len - 1 && dest[k + j + 1] >= '0' && dest[k + j + 1] <= '9')
-	    temp_value += dest[k + j + 1] - '0';
+if (temp_value < 10)
+{
+non_carry_value = temp_value;
+carry_value = 0;
+}
 
-	  if (temp_value < 10)
-	    {
-	      non_carry_value = temp_value;
-	      carry_value = 0;
-	    }
-	  else
-	    {
-	      non_carry_value = temp_value % 10;
-	      carry_value = temp_value / 10;
-	    }
+else
+{
+non_carry_value = temp_value % 10;
+carry_value = temp_value / 10;
+}
 
-	  dest[k + j + 1] = non_carry_value + '0';
-	  k--;
-	}
+dest[k + j + 1] = non_carry_value + '0';
+k--;
+}
 
-      if (carry_value)
-	dest[k + j + 1] = carry_value + '0';
+if (carry_value)
+dest[k + j + 1] = carry_value + '0';
 
-      carry_value = 0;
+carry_value = 0;
 
-      if (j > 0)
-	j--;
-      else
-	i = -1;
-    }
+if (j > 0)
+j--;
+else
+i = -1;
+}
 
-  free(dest);
-  free(multiplicand);
-  free(multiplier);
+free(dest);
+free(multiplicand);
+free(multiplier);
 }
 
 /**
@@ -171,11 +168,11 @@ void populateResult(char *dest, char *n1, int n1_len, char *n2, int n2_len)
 
 void print_result(char *src, int length)
 {
-  int i;
+int i;
 
-  for (i = 0; i < length; i++)
-    {
-      if (src[i] >= '0' && src[i] <= '9')
-	printf("%c", src[i]);
-    }
+for (i = 0; i < length; i++)
+{
+if (src[i] >= '0' && src[i] <= '9')
+printf("%c", src[i]);
+}
 }
