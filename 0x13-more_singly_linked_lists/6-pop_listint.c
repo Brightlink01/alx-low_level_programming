@@ -8,20 +8,20 @@
  */
 int pop_listint(listint_t **head)
 {
-  listint_t *temp;
-  int removed = 0;
+listint_t *temp;
+int removed = 0;
 
-  if (*head == NULL)
-    return (removed);
+if (*head == NULL)
+return (removed);
 
-  if (*head == NULL)
-    return (removed);
+if (*head == NULL)
+return (removed);
 
-  temp = *head;
-  removed = temp->n;
-  /*make head point to the next element*/
-  *head = (*head)->next;
-  free(temp);
+temp = *head;
+removed = temp->n;
+/*make head point to the next element*/
+*head = (*head)->next;
+free(temp);
 
-  return (removed);
+return (removed);
 }
