@@ -19,5 +19,5 @@ printf("%i\n", current->n);
 current = current->next;
 nbr_nodes++;
 }
-return (nbr_nodes);
+return (nbr_node);
 }

@@ -16,8 +16,7 @@ if (head == NULL)
 return (NULL);
 
 currents = currentf = head;
-do 
-{
+do {
 if (currents->next)
 currents = currents->next;
 else
