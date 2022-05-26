@@ -1,1 +1,1 @@
-project 0x12 more on linked in
+The rework of damn f*king git commit

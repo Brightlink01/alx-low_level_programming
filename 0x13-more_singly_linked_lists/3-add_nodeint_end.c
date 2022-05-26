@@ -27,6 +27,7 @@ last_nodeint = *head;
 
 while (last_nodeint->next != NULL)
 last_nodeint = last_nodeint->next;
+
 last_nodeint->next = new_nodeint;
 }
 

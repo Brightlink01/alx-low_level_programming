@@ -9,15 +9,12 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-
 listint_t *currents, *currentf;
-
 if (head == NULL)
 return (NULL);
 
 currents = currentf = head;
-do 
-{
+do {
 if (currents->next)
 currents = currents->next;
 else
