@@ -16,9 +16,9 @@ int leng;
 if (!b)
 return (0);
 while(b[leng])
-len++;
+leng++;
 
-for (len -= 1; len >= 0; len--)
+for (leng -= 1; leng >= 0; leng--)
 {
 if (b[leng] != '0' && b[leng] != '1')
 return (0);
